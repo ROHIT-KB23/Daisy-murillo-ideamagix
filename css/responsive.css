@@ -1,0 +1,1046 @@
+/* ============================================
+   RESPONSIVE.CSS
+   Daisy Murillo Portfolio - Responsive Styles
+   ============================================ */
+
+/* ============================================
+   TABLET STYLES (1024px and below)
+   ============================================ */
+@media screen and (max-width: 1024px) {
+    /* Header & Navigation */
+    .navbar .container {
+        padding: 0 60px;
+    }
+    
+    .nav-menu {
+        gap: 30px;
+    }
+    
+    /* Hero Section */
+    .hero-section {
+        padding-left: 60px;
+    }
+    
+    .hero-content {
+        gap: 60px;
+    }
+    
+    .hero-name {
+        font-size: 80px;
+    }
+    
+    /* About Section */
+    .about-section {
+        padding: 80px 0;
+    }
+    
+    /* Purple Shape - Move to RIGHT for tablet */
+    .about-left-shape {
+        left: auto;
+        right: -300px;
+        width: 400px;
+        /* opacity: 0.6; */
+        transform: scaleX(-1);
+         transform: rotate(-180deg);
+    }
+    
+    .about-wrapper {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+    
+    .about-top {
+        flex-direction: column;
+        gap: 50px;
+    }
+    
+    .about-left-content {
+        max-width: 100%;
+    }
+    
+    .about-title {
+        font-size: 70px;
+    }
+    
+    .about-description {
+        max-width: 500px;
+    }
+    
+    .stats-grid {
+        min-width: 100%;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+    }
+    
+    .stat-card {
+        padding: 25px 15px;
+    }
+    
+    .stat-number {
+        font-size: 36px;
+    }
+    
+    .stat-label {
+        font-size: 13px;
+    }
+    
+    .skills-grid {
+        gap: 40px;
+        padding: 0;
+    }
+    
+    .skill-title {
+        font-size: 24px;
+    }
+    
+    .skill-desc {
+        font-size: 15px;
+    }
+    
+    /* Projects Section */
+    .projects-section {
+        padding-left: 60px;
+    }
+    
+    .projects-grid {
+        gap: 30px 20px;
+    }
+    
+    .project-card {
+        width: 380px;
+    }
+    
+    .project-card:nth-child(even) {
+        margin-top: -200px;
+    }
+    
+    /* Contact Section */
+    .contact-container {
+        padding: 0 60px;
+    }
+}
+
+/* ============================================
+   TABLET PORTRAIT (900px and below)
+   ============================================ */
+@media screen and (max-width: 900px) {
+    /* About Section */
+    .about-left-shape {
+        right: -350px;
+        width: 450px;
+         transform: rotate(-180deg);
+    }
+    
+    .about-wrapper {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    
+    .about-title {
+        font-size: 60px;
+    }
+    
+    .about-arrow {
+        height: 40px;
+    }
+    
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+    
+    .skill-item:last-child {
+        grid-column: 1 / -1;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    
+    /* Projects Section */
+    .projects-title {
+        font-size: 70px;
+    }
+    
+    .project-card {
+        width: 350px;
+    }
+    
+    .project-card:nth-child(even) {
+        margin-top: -150px;
+    }
+}
+
+/* ============================================
+   MOBILE STYLES (768px and below)
+   ============================================ */
+@media screen and (max-width: 768px) {
+    /* HEADER & NAVIGATION */
+   .navbar .container {
+        padding: 0 20px;
+    }
+    
+    .logo img {
+        height: 40px;
+    }
+    
+    .hamburger {
+        display: flex;
+    }
+    
+    .nav-menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 70%;
+        height: 100vh;
+        background-color: rgba(10, 10, 10, 0.98);
+        backdrop-filter: blur(10px);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        transition: right 0.4s ease;
+        padding: 20px;
+        z-index: 1002;
+    }
+    
+    .nav-menu.active {
+        right: 0;
+    }
+    
+    .nav-menu li a {
+        font-size: 20px;
+        color: #ffffff;
+    }
+    
+    .close-menu {
+        display: flex;
+    }
+    
+    /* HERO SECTION */
+    .hero-section {
+        padding: 0px 20px 40px 20px;
+        min-height: auto;
+    }
+    
+    .hero-content {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .intro-line {
+        width: 60px;
+        margin-right: 10px;
+    }
+    
+    .intro-text {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    
+    .hero-name {
+        font-size: 60px;
+        margin-bottom: 15px;
+        line-height: 1;
+    }
+    
+    .arrow-icon {
+        height: 28px;
+        margin-top: 15px;
+        margin-left: 5px;
+    }
+    
+    .hero-description {
+        font-size: 14px;
+        max-width: 100%;
+        line-height: 1.6;
+    }
+    
+    .hero-image {
+        height: auto;
+        order: -1;
+        margin-bottom: 0;
+        padding-top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .hero-image img {
+        max-width: 100%;
+        width: 80%;
+        height: auto;
+        margin: 0;
+    }
+    
+    /* ============================================
+       ABOUT SECTION - CORRECTED FOR MOBILE
+       ============================================ */
+    .about-section {
+        padding: 60px 20px;
+        position: relative;
+        overflow: visible;
+    }
+    
+    /* Purple Shape - FIXED: Properly positioned on right */
+    .about-left-shape {
+        position: absolute;
+        left: auto;
+        right: -100px !important;
+        top: 100px !important;
+        width: 250px !important;
+        height: 400px;
+        z-index: 1;
+        pointer-events: none;
+         transform: rotate(-180deg);
+        display: block !important;
+        transform: none;
+    }
+    
+    .about-left-shape img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+         ;
+    }
+    
+    .about-wrapper {
+        position: relative;
+        z-index: 2;
+        padding-left: 0;
+        padding-right: 0;
+        width: 100%;
+    }
+    
+    /* About Header - Match the image layout */
+    .about-header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+    
+    .about-line {
+        width: 60px;
+        height: 2px;
+        background: #8a2be2;
+        margin-right: 15px;
+        display: block;
+    }
+    
+    .about-label {
+        font-size: 14px;
+        color: #ffffff;
+        font-weight: 400;
+    }
+    
+    .about-title {
+        font-size: 50px;
+        font-weight: 700;
+        line-height: 1.1;
+        margin-bottom: 20px;
+        letter-spacing: -0.5px;
+    }
+    
+    .about-title .highlight {
+        color: #8a2be2;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+    }
+    
+    .about-arrow {
+        height: 25px;
+        width: auto;
+        vertical-align: middle;
+        display: inline-block;
+        margin-left: 5px;
+        transform: rotate(-90deg);
+    }
+    
+    /* Introduction paragraph */
+    .about-description {
+        font-size: 14px;
+        line-height: 1.6;
+        color: #cccccc;
+        margin-bottom: 30px;
+        max-width: 100%;
+    }
+    
+    /* Stats Grid - Vertical layout like image */
+    .stats-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    
+    .stat-card {
+        background-color: #1a1a1a;
+        padding: 20px;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-align: left;
+        transition: none;
+    }
+    
+    .stat-number {
+        font-size: 32px;
+        font-weight: 700;
+        color: #8a2be2;
+        margin-bottom: 0;
+        min-width: 60px;
+        line-height: 1;
+    }
+    
+    .stat-label {
+        font-size: 14px;
+        color: #cccccc;
+        line-height: 1.3;
+        text-align: right;
+        flex: 1;
+        /* padding-left: 20px; */
+        font-weight: 500;
+    }
+    
+    /* Remove divider line on mobile */
+    .about-divider {
+        display: none;
+    }
+    
+    /* Skills Grid - Vertical layout */
+    .skills-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        padding: 0;
+    }
+    
+    .skill-item {
+        text-align: left;
+        padding: 20px 0;
+    }
+    
+    .skill-icon {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    
+    .skill-icon img {
+        width: 50px;
+        height: 50px;
+        object-fit: contain;
+    }
+    
+    .skill-title {
+        font-size: 22px;
+        font-weight: 600;
+        color: #ffffff;
+        margin-bottom: 10px;
+    }
+    
+    .skill-desc {
+        font-size: 14px;
+        line-height: 1.5;
+        color: #cccccc;
+        width: 80%;
+    }
+    
+    /* ============================================
+       PROJECTS SECTION
+       ============================================ */
+    .projects-section {
+        padding: 60px 20px;
+    }
+    
+    .projects-header {
+        max-width: 100%;
+        margin-bottom: 50px;
+    }
+    
+    .projects-line {
+        width: 60px;
+    }
+    
+    .projects-label {
+        font-size: 14px;
+    }
+    
+    .projects-title {
+        font-size: 50px;
+        margin-bottom: 20px;
+    }
+    
+    .projects-arrow {
+        height: 25px;
+    }
+    
+    .projects-description {
+        font-size: 14px;
+        max-width: 100%;
+    }
+    
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 60px;
+        max-width: 100%;
+    }
+    
+    .project-card {
+        width: 100%;
+        max-width: 100%;
+        /* margin: 0 auto; */
+        margin-top: 40px !important;
+        padding: 15px;
+    }
+    
+    .project-card:nth-child(even) {
+        margin-top: 40px !important;
+    }
+    
+    .project-image-wrapper {
+        height: 200px;
+    }
+    
+    .project-icon {
+        top: -25px;
+        right: -25px;
+        width: 50px;
+        height: 50px;
+        padding: 10px;
+    }
+    
+    .project-name {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    
+    .project-desc {
+        font-size: 13px;
+        margin-bottom: 15px;
+    }
+    
+    .tag {
+        padding: 6px 12px;
+        font-size: 10px;
+    }
+    
+    .projects-shape-right {
+        right: -300px;
+        bottom: 300px;
+        width: 400px;
+        opacity: 0.3;
+    }
+    
+    /* ============================================
+       CONTACT SECTION
+       ============================================ */
+    .contact-section {
+        padding: 60px 20px;
+    }
+    
+    .contact-container {
+        padding: 0;
+        margin-top: 40px;
+    }
+    
+    .contact-line {
+        width: 60px;
+    }
+    
+    .contact-header-flex {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+    }
+    
+    .contact-title {
+        font-size: 50px;
+    }
+    
+    .contact-arrow {
+        height: 25px;
+        margin-top: 15px;
+    }
+    
+    .social-icons {
+        position: static;
+        display: flex;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+    
+    .social-icon {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s ease;
+        border: 2px solid #2d2d2d;
+        color: black;
+    }
+    
+    .social-icon:hover {
+        background-color: #00bcd4;
+        border-color: #00bcd4;
+        transform: translateY(-3px);
+    }
+    
+    .contact-form {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        margin-top: 30px;
+    }
+    
+    .form-label {
+        font-size: 16px;
+    }
+    
+    .form-input,
+    .form-textarea {
+        font-size: 14px;
+        padding: 10px 0;
+    }
+    
+    .form-textarea {
+        min-height: 100px;
+    }
+    
+    .submit-btn {
+        padding: 15px 30px;
+        font-size: 15px;
+    }
+    
+    .copyright {
+        font-size: 12px;
+        margin-top: 30px;
+        text-align: center;
+    }
+    
+    .contact-shape-left {
+        left: -200px;
+        top: 50px;
+        width: 300px;
+        height: 300px;
+        opacity: 0.5;
+    }
+}
+
+/* ============================================
+   SMALL MOBILE (480px and below)
+   ============================================ */
+@media screen and (max-width: 480px) {
+    /* HEADER */
+    .navbar .container {
+        padding: 0 15px;
+    }
+    
+    .logo img {
+        height: 35px;
+    }
+    
+    .nav-menu {
+        width: 85%;
+    }
+    
+    .nav-menu li a {
+        font-size: 18px;
+    }
+    
+    /* HERO SECTION */
+    .hero-section {
+        padding: 30px 15px;
+    }
+    
+    .hero-name {
+        font-size: 48px;
+    }
+    
+    .arrow-icon {
+        height: 25px;
+        margin-top: 15px;
+        margin-left: 5px;
+    }
+    
+    .hero-description {
+        font-size: 13px;
+    }
+    
+    .hero-image {
+        height: auto;
+    }
+    
+    .hero-image img {
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+    
+    /* ABOUT SECTION */
+    .about-section {
+        padding: 40px 0;
+    }
+    
+    /* Purple Shape - Small mobile: Reduce size and opacity */
+    .about-left-shape {
+        right: -80px !important;
+        top: 80px !important;
+        width: 200px !important;
+        height: 300px;
+        /* opacity: 0.5; */
+        transform: rotate(-180deg);
+    }
+    
+   
+    .about-wrapper {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    .about-line {
+        width: 50px;
+        margin-right: 10px;
+    }
+    
+    .about-label {
+        font-size: 13px;
+    }
+    
+     .about-title {
+        font-size: 42px;
+    }
+    
+    .about-arrow {
+        height: 25px;
+        margin-left: 5px;
+    }
+    
+    .about-description {
+        font-size: 13px;
+        width: 50%;
+    }
+    
+    .stat-card {
+        padding: 15px;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+    
+    .stat-number {
+        font-size: 28px;
+        min-width: 60px;
+    }
+    
+    .stat-label {
+        font-size: 12px;
+        /* padding-left: 15px; */
+    }
+    
+    .about-divider {
+        margin-bottom: 30px;
+    }
+    
+    .skill-title {
+        font-size: 20px;
+    }
+    
+    .skill-desc {
+        font-size: 13px;
+    }
+    
+    /* PROJECTS SECTION */
+    .projects-section {
+        padding: 40px 15px;
+    }
+    
+    .projects-title {
+        font-size: 42px;
+    }
+    
+    .projects-arrow {
+        height: 25px;
+    }
+    
+    .projects-description {
+        font-size: 13px;
+    }
+    
+    .project-card {
+        max-width: 100%;
+    }
+    
+    .project-image-wrapper {
+        height: 180px;
+    }
+    
+    .project-icon {
+        top: -30px;
+        right: -30px;
+        width: 50px;
+        height: 50px;
+        padding: 10px;
+    }
+    
+    .project-name {
+        font-size: 18px;
+    }
+    
+    .project-desc {
+        font-size: 12px;
+    }
+    
+    .tag {
+        padding: 6px 12px;
+        font-size: 9px;
+    }
+    
+    /* CONTACT SECTION */
+    .contact-section {
+        padding: 40px 0;
+    }
+    
+    .contact-container {
+        padding: 0 15px;
+        margin-top: 40px;
+    }
+    
+    .contact-title {
+        font-size: 48px;
+    }
+    
+    .contact-arrow {
+        height: 25px;
+        margin-top: 15px;
+    }
+    
+    .social-icons {
+        gap: 12px;
+    }
+    
+    .social-icon {
+        width: 32px;
+        height: 32px;
+    }
+    
+    .form-label {
+        font-size: 14px;
+    }
+    
+    .form-input,
+    .form-textarea {
+        font-size: 13px;
+    }
+    
+    .submit-btn {
+        padding: 12px 25px;
+        font-size: 14px;
+    }
+    
+    .copyright {
+        font-size: 11px;
+    }
+}
+
+/* ============================================
+   EXTRA SMALL MOBILE (380px and below)
+   ============================================ */
+@media screen and (max-width: 380px) {
+    .hero-section {
+        padding: 0px 15px 25px 15px;
+    }
+    
+    .hero-name {
+        font-size: 42px;
+        line-height: 0.9;
+        margin-bottom: 10px;
+    }
+    
+    .arrow-icon {
+        height: 22px;
+        margin-top: 10px;
+    }
+    
+    .intro-text {
+        font-size: 13px;
+        margin-bottom: 8px;
+    }
+    
+    .hero-description {
+        font-size: 12px;
+    }
+    
+    /* ABOUT SECTION */
+    /* Purple Shape - Extra small: Hide completely to avoid clutter */
+    .about-left-shape {
+        right: -60px !important;
+        top: 100px !important;
+        width: 150px !important;
+        height: 250px;
+         transform: rotate(-180deg);
+        
+    }
+    
+    .about-title {
+        font-size: 42px;
+    }
+    
+    .about-arrow {
+        height: 22px;
+    }
+    
+    .stat-card {
+        padding: 12px;
+    }
+    
+    .stat-number {
+        font-size: 24px;
+    }
+    
+    .stat-label {
+        font-size: 11px;
+    }
+    
+    .skill-title {
+        font-size: 18px;
+    }
+    
+    .skill-desc {
+        font-size: 12px;
+    }
+    
+    /* PROJECTS SECTION */
+    .projects-title {
+        font-size: 42px;
+    }
+    
+    .project-icon {
+        top: -25px;
+        right: -25px;
+        width: 45px;
+        height: 45px;
+    }
+    
+    /* CONTACT SECTION */
+    .contact-title {
+        font-size: 42px;
+    }
+    
+    .hero-image {
+        height: auto;
+    }
+    
+    .hero-image img {
+        max-width: 100%;
+        width: 100%;
+    }
+}
+
+/* ============================================
+   EXTRA SMALL MOBILE (360px and below)
+   ============================================ */
+@media screen and (max-width: 360px) {
+    .hero-name {
+        font-size: 38px;
+    }
+    
+    .about-title {
+        font-size: 38px;
+    }
+    
+    .projects-title {
+        font-size: 38px;
+    }
+    
+    .contact-title {
+        font-size: 38px;
+    }
+    
+    .social-icons {
+        gap: 8px;
+    }
+    
+    .social-icon {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+/* ============================================
+   ACCESSIBILITY & PERFORMANCE
+   ============================================ */
+@media (prefers-reduced-motion: reduce) {
+    .stat-card,
+    .project-card,
+    .social-icon,
+    .submit-btn {
+        transition: none !important;
+    }
+    
+    .hamburger span,
+    .close-menu {
+        transition: none !important;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    /* Optional: Add light mode support if needed */
+}
+
+/* ============================================
+   PRINT STYLES
+   ============================================ */
+@media print {
+    .about-left-shape,
+    .projects-shape-right,
+    .contact-shape-left,
+    .hamburger,
+    .close-menu,
+    .social-icons,
+    .submit-btn {
+        display: none !important;
+    }
+    
+    .nav-menu {
+        position: static !important;
+        display: flex !important;
+        flex-direction: row !important;
+        width: 100% !important;
+        height: auto !important;
+        background: transparent !important;
+    }
+    
+    .hero-section,
+    .about-section,
+    .projects-section,
+    .contact-section {
+        background: white !important;
+        color: black !important;
+        padding: 20px 0 !important;
+    }
+    
+    .stat-card {
+        border: 1px solid #ccc !important;
+        background: white !important;
+        color: black !important;
+    }
+    
+    .project-card {
+        border: 1px solid #ccc !important;
+        break-inside: avoid;
+    }
+    
+    .contact-form {
+        display: none !important;
+    }
+}
