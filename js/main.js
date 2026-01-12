@@ -68,3 +68,29 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
+
+// Page Loader Logic
+window.addEventListener('load', () => {
+    const loader = document.querySelector('.loader');
+    
+    
+    setTimeout(() => {
+        loader.classList.add('hide');
+        
+        
+        setTimeout(() => {
+            loader.style.display = 'none';
+        }, 500); 
+    }, 500); 
+});
+
+
+setTimeout(() => {
+    const loader = document.querySelector('.loader');
+    if (loader && !loader.classList.contains('hide')) {
+        loader.classList.add('hide');
+        setTimeout(() => {
+            loader.style.display = 'none';
+        }, 500);
+    }
+}, 5000);
