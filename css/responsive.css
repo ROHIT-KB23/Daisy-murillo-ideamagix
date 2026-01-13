@@ -415,11 +415,13 @@
         flex-direction: column;
         gap: 30px;
         padding: 0;
+        
     }
     
     .skill-item {
         text-align: left;
-        padding: 20px 0;
+        padding: 20px 10px;
+        background-color: rgb(44, 44, 44);
     }
     
     .skill-icon {
@@ -736,6 +738,15 @@
         flex-direction: column;
         align-items: start;
     }
+    .skill-1 {
+        width: 50%;
+    }
+    .skill-2{
+        width: 60%;
+    }
+    .skill-3{
+        width: 70%;
+    }
     
     .stat-number {
         font-size: 28px;
@@ -777,7 +788,7 @@
     }
     
     .project-card {
-        max-width: 100%;
+        max-width: 90%;
     }
     
     .project-image-wrapper {
@@ -952,6 +963,7 @@
 @media screen and (max-width: 360px) {
     .hero-name {
         font-size: 38px;
+        line-height: 1.2;
     }
     
     .about-title {
